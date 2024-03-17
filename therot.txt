@@ -1,0 +1,24 @@
+background color changer project 
+
+step 1: Now in App.jsx let take Hooks 
+        we will use {useState Hook} 
+        where we have change the stats of the function
+
+step 2: Now let take it 
+        <div className="w-full h-screen duration-200"
+    style={{backgroundColor: color}}
+    >
+      <div className="fixed flex flex-wrap
+      justify-center bottom-12 inset-x-0 px-2">
+      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
+      <button 
+      onClick={() => setColor("red")} 
+      // on click is a function which contaionof one another fuction which is setColor which iscalling color "setColor("color") so our default color is olive color now we can change it by replacing with the different colors exred green etc.
+      className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+      style={{backgroundColor: "red"}}>
+      Red</button>
+
+      like this we have div inside it we have button {onClick} function is used to change the bg color
+      const [color, setColor] = useState('olive)
+      in our case default bg color is olive so style={{background:color;}}
+      using onClick function we will change the background color of the function;
